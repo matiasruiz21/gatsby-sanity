@@ -1,6 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: "gatsby-bootcamp",
+    title: "Picado 🌶️",
+    author: "Matías Ruiz 😎",
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "mqodunvr",
+        dataset: "production",
+        graphqlTag: "default",
+        watchMode: "true"
+      },
+    },
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+  ],
 };
