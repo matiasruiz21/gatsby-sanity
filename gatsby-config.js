@@ -11,7 +11,6 @@ module.exports = {
         projectId: "mqodunvr",
         dataset: "production",
         graphqlTag: "default",
-        watchMode: "true"
       },
     },
     "gatsby-plugin-sass",
